@@ -3,7 +3,7 @@ import telebot
 from telebot import types
 
 BOT_TOKEN = "8549761838:AAGNg3CH2TLZ1QO3frF7bAsCfZ0EjHrJnm4"  # ← Change this!
-CHANNEL_LINK = "https://t.me/YourDiscountChannel"  # ← Your channel
+CHANNEL_LINK = "https://t.me/flights_bills_b4u"  # ← Your channel
 LOG_FILE = "users.txt"
 
 bot = telebot.TeleBot(BOT_TOKEN)
