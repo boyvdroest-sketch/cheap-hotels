@@ -1,12 +1,13 @@
 services:
-  - type: worker
-    name: accommodation-discount-bot
+  - type: web
+    name: usa-cheap-hotels-bot
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python bot.py
+    startCommand: python main.py
     envVars:
-      - key: BOT_TOKEN
-        sync: false
-      - key: CHANNEL_LINK
-        value: "https://t.me/YourAccommodationDeals"
+      BOT_TOKEN:
+        description: Your Telegram bot token
+      CHANNEL_LINK:
+        description: Your channel invite link
+        value: https://t.me/+YourChannelHere
